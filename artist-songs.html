@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Artist Playlist - Ninja Studio</title>
+	<link rel="shortcut icon" href="pics/favicon.ico" type="image/x-icon">
+	<!-- CSS File Linking -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Fontawesome Linking-->
+	<script src="https://kit.fontawesome.com/f52fff21a0.js" crossorigin="anonymous"></script>
+	<!-- Setting Character Encoding -->
+	<meta charset="utf-8">
+	<!-- Setting Viewport Width and Initial Scale -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<!-- Top Navigaion Bar -->
+	<header>
+		<!-- Left Header Navigaion -->
+		<div id="left-header">
+			<!-- Site Logo -->
+			<a href="index.html">
+				<div id="logo">
+					<img src="pics/logo.png">
+					<div>
+						<p class="color-white">Ninja</p>
+						<p class="bold color-white">Studio</p>
+					</div>
+				</div>
+			</a>
+			<!-- Favourites Navigation -->
+			<a href="#">
+				<div id="favourites">
+					<p class="color-white">Favourites</p>
+				</div>
+			</a>
+		</div>
+
+		<!-- Right Header navigation -->
+		<div id="right-header">
+			<!-- Search Bar -->
+			<form id="search-bar">
+				<i class="fas fa-search"></i>
+				<input type="text" placeholder="Search" name="search">
+				<button type="submit"><i class="fas fa-microphone"></i></button>
+			</form>
+			<!-- Notification icon -->
+			<i id="notification" class="fas fa-bell fa-lg"></i>
+			<!-- Profile Icon -->
+			<div id="profile">
+				<img src="pics/profile.jpg">
+			</div>
+		</div>
+	</header>
+
+
+	<!-- Playing Div at bottom or
+		Bottom navigation -->
+		<section id="playing-div">
+
+			<div id="left-playing-div">
+				<img src="pics/shreya-ghoshal.jpg">
+				<div class="info">
+					<p class="color-blackish-white bold">Rozana</p>
+					<p class="color-blackish-white small-font">Shreya Ghoshal</p>
+				</div>
+				<i class="far fa-heart color-white"></i>
+				<i class="fas fa-ban color-white"></i>
+			</div>
+
+			<div id="centre-playing-div">
+				<div id="music-controls">
+					<a href="#">
+						<i class="fas fa-random color-blackish-white fa-sm"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-step-backward color-blackish-white fa-sm"></i>
+					</a>
+					<a href="#">
+						<i class="far fa-pause-circle color-blackish-white fa-2x"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-step-forward color-blackish-white fa-sm"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-redo-alt color-blackish-white fa-sm"></i>
+					</a>
+				</div>
+				<div id="time-slider">
+					<span class="color-blackish-white small-font">2:35</span>
+					<input type="range" id="time-control" name="time-control"
+					min="0" max="4.44" step="0.01">
+					<label class="color-blackish-white small-font" for="time-control">4:44</label>
+				</div>
+			</div>
+
+			<div id="right-playing-div">
+				<a href="#section-aside">
+					<i class="fas fa-list color-blackish-white"></i>
+				</a>
+				<a href="">
+					<i class="fas fa-podcast color-blackish-white"></i>
+				</a>
+				<a href="">
+					<i class="fas fa-volume-up color-blackish-white"></i>
+				</a>
+				<input type="range" id="volume-control" name="volume-control"
+				min="0" max="10" step="1">
+				<a href="">
+					<i class="fas fa-expand-alt color-blackish-white"></i>
+				</a>
+			</div>
+		</section>
+		
+		<!-- Home Screen -->
+		<main>
+			<!-- Main Content Section -->
+			<section id="section-main">
+				<section id="artist">
+					<img src="pics/shreya-ghoshal.jpg">
+					<div id="artist-details">
+						<div id="artist-title">
+							<span class="color-white bold big-font">Shreya Ghoshal</span>
+							<span class="color-blackish-white small-font bold">100M Followers</span>
+						</div>
+						<p class="color-blackish-white small-font bold">Indian Singer</p>
+						<p class="color-blackish-white small-font">
+							Shreya Ghoshal (born 12 March 1984) is an Indian playback singer, composer and music producer. She has received four National Film Awards, four Kerala State Film Awards, two Tamil Nadu State Film Awards, seven Filmfare Awards and ten Filmfare Awards South. She has recorded songs for films and albums in various Indian languages and has established herself as a leading playback singer of Indian cinema.
+						</p>
+
+						<div id="play-follow-buttons">
+							<a href="#playing-div">
+								<div id="play-all-button">
+									<p class="color-white">Play All</p>
+								</div>
+							</a>
+							<a href="#"><p id="follow-button" class="color-white">Follow</p></a>
+						</div>
+						<p class="color-blackish-white small-font"> 247 Tracks | 127 Albums</p>
+					</div>
+				</section>
+
+				<section id="artist-songs">
+					<div id="aside-content">
+						<!-- These Ordered List Items Contains Songs By Artist 
+							Style Inherited from aside content -->
+							<ol>
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/love.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/shreya-ghoshal.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/pop.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/love.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/shreya-ghoshal.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/road-trip.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/pop.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/party.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/retro.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white fa-lg"></i>
+										<i class="fas fa-plus color-white fa-lg"></i>
+									</div>
+								</li>
+								
+							</ol>
+						</div>
+					</section>
+				</section>
+
+				<!-- Aside Content Section or Queued Playlist Section -->
+				<aside id="section-aside">
+					<div>
+						<!-- Aside Section Header or Queue Header-->
+						<div id="aside-header">
+							<span class="bold color-white big-font">Queue</span>
+							<span class="dropdown">
+								<span>Queue &#x25BC;</span>
+								<div class="dropdown-content">
+									<a href="#"><p class="color-white">Playlists</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Favourite Songs</p></a>
+								</div>
+							</span>
+						</div>
+
+						<!-- Aside Section Content or Queued Songs List -->
+						<div id="aside-content">
+							<!-- These Ordered List Items Contains Queued Songs Details -->
+							<ol>
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#">
+											<img src="pics/alan-walker.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">On My Way</p>
+											<p class="color-blackish-white">Alan Walker</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#">
+											<img src="pics/armaan-malik.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Kuch To Hai</p>
+											<p class="color-blackish-white">Armaan Malik</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/shreya-ghoshal.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Rozana</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#">
+											<img src="pics/armaan-malik.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Intezari</p>
+											<p class="color-blackish-white">Armaan Malik</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#">
+											<img src="pics/alan-walker.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Alone</p>
+											<p class="color-blackish-white">Alan Walker</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#">
+											<img src="pics/armaan-malik.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Chale Aana</p>
+											<p class="color-blackish-white">Armaan Malik</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/shreya-ghoshal.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Hume Tumse Pyaar Kitna</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#">
+											<img src="pics/alan-walker.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Faded</p>
+											<p class="color-blackish-white">Alan Walker</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+
+								<li class="color-white">
+									<div class="aside-item">
+										<a href="#playing-div">
+											<img src="pics/shreya-ghoshal.jpg">
+										</a>
+										<div>
+											<p class="color-white bold">Thodi Der</p>
+											<p class="color-blackish-white">Shreya Ghoshal</p>
+										</div>
+										<i class="far fa-heart color-white"></i>
+									</div>
+								</li>
+							</ol>
+						</div>
+
+					</div>
+				</aside>
+
+			</main>
+
+		</body>
+		</html>

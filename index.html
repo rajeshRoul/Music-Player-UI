@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja Studio</title>
+	<link rel="shortcut icon" href="pics/favicon.ico" type="image/x-icon">
+	<!-- CSS File Linking -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Fontawesome Linking-->
+	<script src="https://kit.fontawesome.com/f52fff21a0.js" crossorigin="anonymous"></script>
+	<!-- Setting Character Encoding -->
+	<meta charset="utf-8">
+	<!-- Setting Viewport Width and Initial Scale -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<!-- Top Navigaion Bar -->
+	<header>
+		<!-- Left Header Navigaion -->
+		<div id="left-header">
+			<!-- Site Logo -->
+			<a href="#">
+				<div id="logo">
+					<img src="pics/logo.png">
+					<div>
+						<p class="color-white">Ninja</p>
+						<p class="bold color-white">Studio</p>
+					</div>
+				</div>
+			</a>
+			<!-- Favourites Navigation -->
+			<a href="#">
+				<div id="favourites">
+					<p class="color-white">Favourites</p>
+				</div>
+			</a>
+		</div>
+
+		<!-- Right Header navigation -->
+		<div id="right-header">
+			<!-- Search Bar -->
+			<form id="search-bar">
+				<i class="fas fa-search"></i>
+				<input type="text" placeholder="Search" name="search">
+				<button type="submit"><i class="fas fa-microphone"></i></button>
+			</form>
+			<!-- Notification icon -->
+			<i id="notification" class="fas fa-bell fa-lg"></i>
+			<!-- Profile Icon -->
+			<div id="profile">
+				<img src="pics/profile.jpg">
+			</div>
+		</div>
+	</header>
+
+
+	<!-- Playing Div at bottom or
+		Bottom navigation -->
+		<section id="playing-div">
+
+			<div id="left-playing-div">
+				<img src="pics/armaan-malik.jpg">
+				<div class="info">
+					<p class="color-blackish-white bold">Kuch To Hai</p>
+					<p class="color-blackish-white small-font">Armann Malik</p>
+				</div>
+				<i class="far fa-heart color-white"></i>
+				<i class="fas fa-ban color-white"></i>
+			</div>
+
+			<div id="centre-playing-div">
+				<div id="music-controls">
+					<a href="#">
+						<i class="fas fa-random color-blackish-white fa-sm"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-step-backward color-blackish-white fa-sm"></i>
+					</a>
+					<a href="#">
+						<i class="far fa-pause-circle color-blackish-white fa-2x"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-step-forward color-blackish-white fa-sm"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-redo-alt color-blackish-white fa-sm"></i>
+					</a>
+				</div>
+				<div id="time-slider">
+					<span class="color-blackish-white small-font">2:35</span>
+					<input type="range" id="time-control" name="time-control"
+					min="0" max="4.44" step="0.01">
+					<label class="color-blackish-white small-font" for="time-control">4:44</label>
+				</div>
+			</div>
+
+			<div id="right-playing-div">
+				<a href="#section-aside">
+					<i class="fas fa-list color-blackish-white"></i>
+				</a>
+				<a href="">
+					<i class="fas fa-podcast color-blackish-white"></i>
+				</a>
+				<a href="">
+					<i class="fas fa-volume-up color-blackish-white"></i>
+				</a>
+				<input type="range" id="volume-control" name="volume-control"
+				min="0" max="10" step="1">
+				<a href="">
+					<i class="fas fa-expand-alt color-blackish-white"></i>
+				</a>
+			</div>
+
+		</section>
+
+		<!-- Home Screen -->
+		<main>
+
+			<!-- Main Content Section -->
+			<section id="section-main">
+				<!-- Home Screen Carousel -->
+				<section id="home-carousel">
+					<a href="#">
+						<img src="pics/bollywood.jpg">
+					</a>
+					<a href="#">
+						<img src="pics/rock.jpg">
+					</a>
+					<a href="#">
+						<img src="pics/party1.jpg">
+					</a>
+				</section>
+
+				<!-- Latest Release Section -->
+				<section id="section-latest-release">
+					<p class="color-white bold">Latest Release</p>
+					<!-- Latest Release items -->
+					<div class ="item-latest-release">
+						<div class ="song-info">
+							<a href="#playing-div">
+								<img src="pics/armaan-malik.jpg">
+								<i class="fas fa-play"></i>
+							</a>
+							<div class ="info">
+								<p class="color-white bold small-font">Kuch To Hai</p>
+								<p class="color-blackish-white small-font">AUG 11,2020</p>
+							</div>
+						</div>
+						<div class ="option">
+							<span class="dropdown">
+								<span><i class="fas fa-ellipsis-h color-blackish-white"></i></span>
+								<div class="dropdown-content">
+									<a href="#playing-div"><p class="color-white">Play Now</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Add To Queue</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Add To Favourites</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Get Info</p></a>
+								</div>
+							</span>
+							<p class="color-blackish-white small-font">4:44</p>
+						</div>
+					</div>
+
+					<div class ="item-latest-release">
+						<div class ="song-info">
+							<a href="#playing-div">
+								<img src="pics/armaan-malik.jpg">
+								<i class="fas fa-play"></i>
+							</a>
+							<div class ="info">
+								<p class="color-white bold small-font">Kuch To Hai</p>
+								<p class="color-blackish-white small-font">AUG 11,2020</p>
+							</div>
+						</div>
+						<div class ="option">
+							<span class="dropdown">
+								<span><i class="fas fa-ellipsis-h color-blackish-white"></i></span>
+								<div class="dropdown-content">
+									<a href="#playing-div"><p class="color-white">Play Now</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Add To Queue</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Add To Favourites</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Get Info</p></a>
+								</div>
+							</span>
+							<p class="color-blackish-white small-font">4:44</p>
+						</div>
+					</div>
+
+					<div class ="item-latest-release">
+						<div class ="song-info">
+							<a href="#playing-div">
+								<img src="pics/armaan-malik.jpg">
+								<i class="fas fa-play"></i>
+							</a>
+							<div class ="info">
+								<p class="color-white bold small-font">Kuch To Hai</p>
+								<p class="color-blackish-white small-font">AUG 11,2020</p>
+							</div>
+						</div>
+						<div class ="option">
+							<span class="dropdown">
+								<span><i class="fas fa-ellipsis-h color-blackish-white"></i></span>
+								<div class="dropdown-content">
+									<a href="#playing-div"><p class="color-white">Play Now</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Add To Queue</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Add To Favourites</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Get Info</p></a>
+								</div>
+							</span>
+							<p class="color-blackish-white small-font">4:44</p>
+						</div>
+					</div>
+
+					<div class ="item-latest-release">
+						<div class ="song-info">
+							<a href="#playing-div">
+								<img src="pics/armaan-malik.jpg">
+								<i class="fas fa-play"></i>
+							</a>
+							<div class ="info">
+								<p class="color-white bold small-font">Kuch To Hai</p>
+								<p class="color-blackish-white small-font">AUG 11,2020</p>
+							</div>
+						</div>
+						<div class ="option">
+							<span class="dropdown">
+								<span><i class="fas fa-ellipsis-h color-blackish-white"></i></span>
+								<div class="dropdown-content">
+									<a href="#playing-div"><p class="color-white">Play Now</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Add To Queue</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Add To Favourites</p></a>
+									<hr>
+									<a href="#"><p class="color-white">Get Info</p></a>
+								</div>
+							</span>
+							<p class="color-blackish-white small-font">4:44</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Popular Artists section -->
+				<section id="section-popular-artists">
+					<p class="color-white bold"> Popular Artists </p>
+					<div id="popular-artists">
+
+						<div class ="item-popular-artist">
+							<div>
+								<a href="artist-songs.html">
+									<img src="pics/shreya-ghoshal.jpg">
+									<i class="fas fa-play"></i>
+								</a>
+							</div>
+							<span class="color-blackish-white small-font">Shreya</span>
+							<span class="color-blackish-white small-font"> Ghoshal</span>
+						</div>
+
+						<div class ="item-popular-artist">
+							<div>
+								<a href="#playing-div">
+									<img src="pics/armaan-malik.jpg">
+									<i class="fas fa-play"></i>
+								</a>
+							</div>
+							<span class="color-blackish-white small-font">Armaan</span>
+							<span class="color-blackish-white small-font"> Malik</span>
+						</div>
+
+						<div class ="item-popular-artist">
+							<div>
+								<a href="artist-songs.html">
+									<img src="pics/shreya-ghoshal.jpg">
+									<i class="fas fa-play"></i>
+								</a>
+							</div>
+							<span class="color-blackish-white small-font">Shreya</span>
+							<span class="color-blackish-white small-font"> Ghoshal</span>
+						</div>
+
+						<div class ="item-popular-artist">
+							<div>
+								<a href="#">
+									<img src="pics/alan-walker.jpg">
+									<i class="fas fa-play"></i>
+								</a>
+							</div>
+							<span class="color-blackish-white small-font">Alan</span>
+							<span class="color-blackish-white small-font"> Walker</span>
+						</div>
+
+						<div class ="item-popular-artist">
+							<div>
+								<a href="artist-songs.html">
+									<img src="pics/shreya-ghoshal.jpg">
+									<i class="fas fa-play"></i>
+								</a>
+							</div>
+							<span class="color-blackish-white small-font">Shreya</span>
+							<span class="color-blackish-white small-font"> Ghoshal</span>
+						</div>
+
+						<div class ="item-popular-artist">
+							<div>
+								<a href="#playing-div">
+									<img src="pics/armaan-malik.jpg">
+									<i class="fas fa-play"></i>
+								</a>
+							</div>
+							<span class="color-blackish-white small-font">Armaan</span>
+							<span class="color-blackish-white small-font"> Malik</span>
+						</div>
+
+					</div>
+				</section>
+
+				<!-- Stations Section -->
+				<section id="stations" class="text-above">
+					<span>
+						<img src="pics/music-station.jpg">
+					</span>
+
+					<div>
+						<a href="artist-songs.html">
+							<img src="pics/love.jpg">
+							<span class="color-white">Love</span>
+						</a>
+					</div>
+
+					<div>
+						<a href="artist-songs.html">
+							<img src="pics/retro.jpg">
+							<span class="color-white">Retro</span>
+						</a>
+					</div>
+
+					<div>
+						<a href="artist-songs.html">
+							<img src="pics/chill.jpg">
+							<span class="color-white">Chill</span>
+						</a>
+					</div>
+
+					<div>
+						<a href="artist-songs.html">
+							<img src="pics/workout.jpg">
+							<span class="color-white">Workout</span>
+						</a>
+					</div>
+
+					<div>
+						<a href="artist-songs.html">
+							<img src="pics/rock.jpg">
+							<span class="color-white">Rock</span>
+						</a>
+					</div>
+
+					<div>
+						<a href="artist-songs.html">
+							<img src="pics/pop.jpg">
+							<span class="color-white">Pop</span>
+						</a>
+					</div>
+				</section>
+
+				<!-- Section with Three Options Party, Electronic and Roadtrip -->
+				<section id="section-music-category" class="text-above">
+					<div>
+						<a href="#">
+							<img src="pics/party.jpg">
+							<span class="color-white bold">Party</span>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="pics/electronic.jpg">
+							<span class="color-white bold">Electronic</span>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="pics/road-trip.jpg">
+							<span class="color-white bold">Road Trip</span>
+						</a>
+					</div>
+				</section>
+
+				<!-- Section Latest Hindi Songs -->
+				<section id="section-latest-songs">
+					<p class="color-white bold">Latest Hindi</p>
+					<div id="latest-songs">
+
+						<a href="artist-songs.html">
+							<div id="item-latest-song">
+								<img src="pics/shreya-ghoshal.jpg">
+								<p class="small-font color-white bold">Rozana</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="#">
+							<div id="item-latest-song">
+								<img src="pics/armaan-malik.jpg">
+								<p class="small-font color-white bold">Intezari</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="#">
+							<div id="item-latest-song">
+								<img src="pics/party.jpg">
+								<p class="small-font color-white bold">Illegal Weapon</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="artist-songs.html">
+							<div id="item-latest-song">
+								<img src="pics/love.jpg">
+								<p class="small-font color-white bold">Rozana</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="artist-songs.html">
+							<div id="item-latest-song">
+								<img src="pics/bollywood.jpg">
+								<p class="small-font color-white bold">Thodi Der</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="artist-songs.html">
+							<div id="item-latest-song">
+								<img src="pics/rock.jpg">
+								<p class="small-font color-white bold">Rozana</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+					</div>
+				</section>
+
+				<!-- Section Latest English Songs -->
+				<section id="section-latest-songs">
+					<p class="color-white bold">Latest English</p>
+					<div id="latest-songs">
+
+						<a href="#">
+							<div id="item-latest-song">
+								<img src="pics/alan-walker.jpg">
+								<p class="small-font color-white bold">On My Way</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="#">
+							<div id="item-latest-song">
+								<img src="pics/electronic.jpg">
+								<p class="small-font color-white bold">Alone</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="#">
+							<div id="item-latest-song">
+								<img src="pics/party.jpg">
+								<p class="small-font color-white bold">Faded</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="#">
+							<div id="item-latest-song">
+								<img src="pics/love.jpg">
+								<p class="small-font color-white bold">The Spectre</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="#">
+							<div id="item-latest-song">
+								<img src="pics/road-trip.jpg">
+								<p class="small-font color-white bold">Faded</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+
+						<a href="#">
+							<div id="item-latest-song">
+								<img src="pics/rock.jpg">
+								<p class="small-font color-white bold">Darkside</p>
+								<p class="small-font color-blackish-white">AUG 11, 2020</p>
+							</div>
+						</a>
+					</div>
+				</section>
+
+			</section>
+
+			<!-- Aside Section -->
+			<aside id="section-aside">
+				<div>
+					<!-- Aside Section Header or Queue Header-->
+					<div id="aside-header">
+						<span class="bold color-white big-font">Queue</span>
+						<span class="dropdown">
+							<span>Queue &#x25BC;</span>
+							<div class="dropdown-content">
+								<a href="#"><p class="color-white">Playlists</p></a>
+								<hr>
+								<a href="#"><p class="color-white">Favourite Songs</p></a>
+							</div>
+						</span>
+					</div>
+
+					<!-- Aside Section Content or Queued Songs List -->
+					<div id="aside-content">
+						<!-- These Ordered List Items Contains Queued Songs Details -->
+						<ol>
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#">
+										<img src="pics/alan-walker.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">On My Way</p>
+										<p class="color-blackish-white">Alan Walker</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#playing-div">
+										<img src="pics/armaan-malik.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">Kuch To Hai</p>
+										<p class="color-blackish-white">Armaan Malik</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#">
+										<img src="pics/shreya-ghoshal.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">Rozana</p>
+										<p class="color-blackish-white">Shreya Ghoshal</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#">
+										<img src="pics/armaan-malik.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">Intezari</p>
+										<p class="color-blackish-white">Armaan Malik</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#">
+										<img src="pics/alan-walker.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">Alone</p>
+										<p class="color-blackish-white">Alan Walker</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#">
+										<img src="pics/armaan-malik.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">Chale Aana</p>
+										<p class="color-blackish-white">Armaan Malik</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#">
+										<img src="pics/shreya-ghoshal.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">Hume Tumse Pyaar Kitna</p>
+										<p class="color-blackish-white">Shreya Ghoshal</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#">
+										<img src="pics/alan-walker.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">Faded</p>
+										<p class="color-blackish-white">Alan Walker</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+
+							<li class="color-white">
+								<div class="aside-item">
+									<a href="#">
+										<img src="pics/shreya-ghoshal.jpg">
+									</a>
+									<div>
+										<p class="color-white bold">Thodi Der</p>
+										<p class="color-blackish-white">Shreya Ghoshal</p>
+									</div>
+									<i class="far fa-heart color-white"></i>
+								</div>
+							</li>
+						</ol>
+					</div>
+
+				</div>
+			</aside>
+		</main>
+	</body>
+	</html>
